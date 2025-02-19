@@ -32,17 +32,11 @@ XLSX Caesar Cipher Tool/
 
 ## How it works
     
-**Sample Data Generation:** The script first creates an Excel file (input.xlsx) using sample data (Name, Age, Email, Gender).
+**Sample Data Generation:** The script first creates an Excel file (sample.xlsx) using sample data (Name, Age, Email, Gender).
 
-**Encryption:** The encrypt_xlsx_file function reads input.xlsx, encrypts each cell in the data rows using the Caesar cipher (default shift of 3), and writes the encrypted data to encrypted_input.xlsx.
+**Encryption:** The encrypt_xlsx_file function reads input.xlsx, encrypts each cell in the data rows using the Caesar cipher (default shift of 3), and writes the encrypted data to encrypted_sample.xlsx.
 
-**Decryption:** The decrypt_xlsx_file function reads encrypted_input.xlsx, decrypts each cell by reversing the cipher (shift by -3), and saves the result as decrypted_output.xlsx.
-
-**INCASE OF USING SAPARATE xlsx FILE**
-Make sure the xlsx file structure look like this
-![Screenshot of XLSX File Structure](./main/xslxStructEx.png)
-
-
+**Decryption:** The decrypt_xlsx_file function reads encrypted_sample.xlsx, decrypts each cell by reversing the cipher (shift by -3), and saves the result as decrypted_sample.xlsx.
 
 ## Requirements
 
@@ -52,7 +46,33 @@ Install the required Python libraries using pip:
 
 ```bash
 pip install openpyxl pandas
+```
 
+## How to Run
 
+1. Clone this repostory or download all the files in the main folder.
+2. Run (`sampleExcel.py`) to create (`sample.xlsx`) file. (Modify table data as you wish)
+3. Try encrypting xlsx file by running (`dataEnc.py`). (It creates (`encrypted_sample.xlsx`))
+4. Try decripting (`encrypted_sample.xlsx`) by running (`dataDec.py`). (It creates (`decrypted_sample.xlsx`))
+
+**INCASE OF USING SAPARATE xlsx FILE:**
+Make sure the xlsx file structure look like this:
+![Screenshot of XLSX File Structure](./main/xslxStructEx.png)
+
+## Limitations
+
+- The Caesar cipher is a simple encryption method and should not be used to secure sensitive information.
+- Only alphabetic characters are encrypted; numbers and special characters remain unchanged.
+
+## Ethical Considerations & Responsible Use
+
+- **Not for Security:** The Caesar cipher is not secure and can be easily broken. Do not use this tool to secure sensitive or personal data.
+- **Potential Misuse:** Modifying it to handle more complex encryption schemes without proper security considerations could mislead users into thinking their data is secure.
+- **Responsible Use:** One who use this program should understand the limitations of simple ciphers and avoid using them in real-world applications where security is important.
+
+## License
+
+- This project is licensed under the [![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)
+ license.
 
 

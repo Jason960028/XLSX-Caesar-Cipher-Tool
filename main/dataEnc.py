@@ -48,7 +48,7 @@ def encrypt_xlsx_file(input_file, output_file, shift=3):
     print(f"Encrypted file saved as '{output_file}'.")
 
 if __name__ == "__main__":
-    input_file = "input.xlsx"            # Your original Excel file.
-    output_file = "encrypted_input.xlsx" # The output file with encrypted data.
+    input_file = "sample.xlsx"            # Your original Excel file.
+    output_file = "encrypted_sample.xlsx" # The output file with encrypted data.
     
     encrypt_xlsx_file(input_file, output_file, shift=3)

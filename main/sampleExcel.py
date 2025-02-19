@@ -12,6 +12,6 @@ data = {
 df = pd.DataFrame(data)
 
 # Save the DataFrame to an Excel file without the index.
-df.to_excel("input.xlsx", index=False)
+df.to_excel("sample.xlsx", index=False)
 
 print("Sample Excel file 'input.xlsx' has been created.")

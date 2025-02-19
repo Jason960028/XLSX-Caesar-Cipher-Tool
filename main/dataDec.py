@@ -41,8 +41,8 @@ def decrypt_xlsx_file(input_file, output_file, shift=3):
     print(f"Decrypted file saved as '{output_file}'.")
 
 if __name__ == "__main__":
-    input_file = "encrypted_input.xlsx"   # The encrypted Excel file.
-    output_file = "decrypted_output.xlsx"   # The file to write the decrypted data.
+    input_file = "encrypted_sample.xlsx"   # The encrypted Excel file.
+    output_file = "decrypted_sample.xlsx"   # The file to write the decrypted data.
     
     # Decrypt the file
     decrypt_xlsx_file(input_file, output_file, shift=3)
