@@ -28,9 +28,6 @@ def encrypt_xlsx_file(input_file, output_file, shift=3):
     for ws in wb.worksheets:
         original_max_column = ws.max_column
         
-        # Process header row (assumed to be the first row) without encryption.
-        header_row = list(ws.iter_rows(min_row=1, max_row=1, max_col=original_max_column))[0]
-        
         # Process data rows (starting from row 2).
         for row in ws.iter_rows(min_row=2, max_row=ws.max_row, max_col=original_max_column):
             encrypted_values = []
@@ -47,8 +44,12 @@ def encrypt_xlsx_file(input_file, output_file, shift=3):
     wb.save(output_file)
     print(f"Encrypted file saved as '{output_file}'.")
 
+
 if __name__ == "__main__":
-    input_file = "sample.xlsx"            # Your original Excel file.
-    output_file = "encrypted_sample.xlsx" # The output file with encrypted data.
+    """
+    Change input_file name to the file you want to encrypt.
+    """
+    input_file = "sample.xlsx"            
+    output_file = "encrypted_sample.xlsx" 
     
     encrypt_xlsx_file(input_file, output_file, shift=3)

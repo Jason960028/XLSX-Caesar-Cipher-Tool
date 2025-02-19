@@ -26,9 +26,6 @@ def decrypt_xlsx_file(input_file, output_file, shift=3):
     wb = load_workbook(input_file)
     
     for ws in wb.worksheets:
-        # Read the header row
-        header = [cell.value for cell in ws[1]]
-        
         # Iterate through each data row (starting from row 2).
         for row in ws.iter_rows(min_row=2, max_row=ws.max_row):
             for cell in row:
@@ -44,5 +41,5 @@ if __name__ == "__main__":
     input_file = "encrypted_sample.xlsx"   # The encrypted Excel file.
     output_file = "decrypted_sample.xlsx"   # The file to write the decrypted data.
     
-    # Decrypt the file
+
     decrypt_xlsx_file(input_file, output_file, shift=3)
