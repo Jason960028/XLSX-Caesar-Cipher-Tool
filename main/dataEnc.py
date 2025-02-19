@@ -20,9 +20,7 @@ def caesar_cipher(text, shift=3):
 
 def encrypt_xlsx_file(input_file, output_file, shift=3):
     """
-    Reads an XLSX file, encrypts each cell in the data rows using a Caesar cipher,
-    computes a SHA-256 hash for each data row (based on the encrypted values),
-    and writes the result to a new XLSX file. The header row is not encrypted.
+    Reads an XLSX file, encrypts each cell in the data rows using a Caesar cipher.
     """
     # Load the workbook.
     wb = load_workbook(input_file)
@@ -50,9 +48,7 @@ def encrypt_xlsx_file(input_file, output_file, shift=3):
     print(f"Encrypted file saved as '{output_file}'.")
 
 if __name__ == "__main__":
-    # Define input and output file names.
     input_file = "input.xlsx"            # Your original Excel file.
     output_file = "encrypted_input.xlsx" # The output file with encrypted data.
     
-    # Encrypt the XLSX file.
     encrypt_xlsx_file(input_file, output_file, shift=3)
