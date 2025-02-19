@@ -52,11 +52,11 @@ pip install openpyxl pandas
 
 1. **Clone** this repository or **Download** all the files in the (`main`) folder.
 2. **Generate sample data:**
-    Run (`sampleExcel.py`) to create (`sample.xlsx`) file. (Modify table data as you wish)
+    - Run (`sampleExcel.py`) to create (`sample.xlsx`) file. (Modify table data as you wish)
 3. **Encrypt the XLSX file:**
-    Run (`dataEnc.py`) to encrypt (`sample.xlsx`). (This will create (`encrypted_sample.xlsx`))
+    - Run (`dataEnc.py`) to encrypt (`sample.xlsx`). (This will create (`encrypted_sample.xlsx`))
 4. **Decrypt the encrypted file:**
-    Run (`dataDec.py`) to decrypt (`encrypted_sample.xlsx`). (This will create(`decrypted_sample.xlsx`))
+    - Run (`dataDec.py`) to decrypt (`encrypted_sample.xlsx`). (This will create(`decrypted_sample.xlsx`))
 
 **INCASE OF USING SAPARATE xlsx FILE:**
 Make sure the xlsx file structure look like this:
