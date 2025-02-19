@@ -32,11 +32,14 @@ XLSX Caesar Cipher Tool/
 
 ## How it works
     
-**Sample Data Generation:** The script first creates an Excel file (sample.xlsx) using sample data (Name, Age, Email, Gender).
+**Sample Data Generation:** 
+    -The script first creates an Excel file (sample.xlsx) using sample data (Name, Age, Email, Gender).
 
-**Encryption:** The encrypt_xlsx_file function reads input.xlsx, encrypts each cell in the data rows using the Caesar cipher (default shift of 3), and writes the encrypted data to encrypted_sample.xlsx.
+**Encryption:** 
+    -The encrypt_xlsx_file function reads input.xlsx, encrypts each cell in the data rows using the Caesar cipher (default shift of 3), and writes the encrypted data to encrypted_sample.xlsx.
 
-**Decryption:** The decrypt_xlsx_file function reads encrypted_sample.xlsx, decrypts each cell by reversing the cipher (shift by -3), and saves the result as decrypted_sample.xlsx.
+**Decryption:** 
+    -The decrypt_xlsx_file function reads encrypted_sample.xlsx, decrypts each cell by reversing the cipher (shift by -3), and saves the result as decrypted_sample.xlsx.
 
 ## Requirements
 
